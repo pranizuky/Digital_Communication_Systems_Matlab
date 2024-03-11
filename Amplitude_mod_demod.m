@@ -1,4 +1,4 @@
-
+%amplitude modulation and demodulation
 clc;
 clear all;
 close all;
