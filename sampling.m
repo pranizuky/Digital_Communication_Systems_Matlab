@@ -1,0 +1,21 @@
+clc;
+clear all;
+close all;
+N = 50;
+n = 0:N-1;
+fs = 1000;
+t = 1/fs
+f = 60;
+x = cos(2*pi*f*n*t);
+figure;
+subplot(4,1,1);
+plot(x);
+y = resample(x,2,1);
+subplot(4,1,2);
+stem(y);
+y = resample(x,4,1);
+subplot(4,1,3);
+stem(y);
+y = resample(x,1,2);
+subplot(4,1,4);
+stem(y);
